@@ -1,10 +1,9 @@
 import React from "react";
 import { createGlobalStyle } from "styled-components";
 
-import Stars from "./components/Stars";
+import PageShell from './components/PageShell';
 import Header from './components/Header';
-import Clouds from './components/Clouds';
-import Lines from './components/Lines';
+import SoundBoard from './components/SoundBoard/SoundBoard';
 
 const GlobalStyle = createGlobalStyle`
   body {
@@ -16,6 +15,8 @@ const GlobalStyle = createGlobalStyle`
   #root {
     height: 100vh;
     padding: 0;
+    display: flex;
+    justify-content: center;
   }
 `;
 
@@ -23,10 +24,10 @@ const App = () => {
   return (
     <React.Fragment>
       <GlobalStyle />
-      <Stars />
-      <Lines />
-      <Header />
-      <Clouds />
+      <PageShell>
+        <Header />
+        <SoundBoard />
+      </PageShell>
     </React.Fragment>
   );
 }

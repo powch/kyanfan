@@ -6,13 +6,14 @@ const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   text-align: center;
+  margin: 0 0 2rem 0;
 `;
 
 const Title = styled.h1`
-  margin: 5rem 0 0 0;
+  margin: 1rem 0 0 0;
   font-family: "Henny Penny", cursive;
   z-index: 10;
-  font-size: 12rem;
+  font-size: 5rem;
   color: #f193af;
   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
     -1px -1px 0 #000;
@@ -22,17 +23,7 @@ const Translation = styled.p`
   margin: 0;
   font-family: "Henny Penny", cursive;
   z-index: 10;
-  font-size: 3rem;
-  color: #f193af;
-  text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
-    -1px -1px 0 #000;
-`;
-
-const Content = styled.h2`
-  margin: 3rem 0 0 0;
-  font-family: "Henny Penny", cursive;
-  z-index: 10;
-  font-size: 10rem;
+  font-size: 2rem;
   color: #f193af;
   text-shadow: -1px 1px 2px #000, 1px 1px 2px #000, 1px -1px 0 #000,
     -1px -1px 0 #000;
@@ -40,9 +31,8 @@ const Content = styled.h2`
 
 const Header = () => (
   <HeaderContainer>
-    <Title>Kyan-chan</Title>
-    <Content>Happy Birthday!</Content>
-    <Translation>誕生日おめでとう</Translation>
+    <Title>Rinetto Kyandie</Title>
+    <Translation>リネット・キャンディ</Translation>
   </HeaderContainer>
 );
 
